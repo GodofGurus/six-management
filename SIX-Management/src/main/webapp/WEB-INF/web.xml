@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+  <display-name>SIX-Management</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <!-- defines a time based to run servlet -->
+<env-entry>
+<description>Minutes to Parse - 1440 minutes = 1 day</description>
+<env-entry-name>Minutes</env-entry-name>
+<env-entry-type>java.lang.String</env-entry-type>
+<env-entry-value>1440</env-entry-value>
+</env-entry>
+  <servlet>
+    <description></description>
+    <display-name>getResults</display-name>
+    <servlet-name>getResults</servlet-name>
+    <servlet-class>getResults</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>getResults</servlet-name>
+    <url-pattern>/getResults</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>recieveResults</display-name>
+    <servlet-name>recieveResults</servlet-name>
+    <servlet-class>recieveResults</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>recieveResults</servlet-name>
+    <url-pattern>/recieveResults</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>recieveResults1</display-name>
+    <servlet-name>recieveResults1</servlet-name>
+    <servlet-class>recieveResults1</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>recieveResults1</servlet-name>
+    <url-pattern>/recieveResults1</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>recieveResults2</display-name>
+    <servlet-name>recieveResults2</servlet-name>
+    <servlet-class>recieveResults2</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>recieveResults2</servlet-name>
+    <url-pattern>/recieveResults2</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>AssessmentReports</display-name>
+    <servlet-name>AssessmentReports</servlet-name>
+    <servlet-class>AssessmentReports</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AssessmentReports</servlet-name>
+    <url-pattern>/AssessmentReports</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>HtmlReports</display-name>
+    <servlet-name>HtmlReports</servlet-name>
+    <servlet-class>HtmlReports</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HtmlReports</servlet-name>
+    <url-pattern>/HtmlReports</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Definitions</display-name>
+    <servlet-name>Definitions</servlet-name>
+    <servlet-class>Definitions</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Definitions</servlet-name>
+    <url-pattern>/Definitions</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Search</display-name>
+    <servlet-name>Search</servlet-name>
+    <servlet-class>Search</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Search</servlet-name>
+    <url-pattern>/Search</url-pattern>
+  </servlet-mapping>
+  
+ 
+  
+  
+  <servlet>
+    <description></description>
+    <display-name>Update</display-name>
+    <servlet-name>Update</servlet-name>
+    <servlet-class>Update</servlet-class>
+    <!-- load-on-startup starts the servlet when the server starts. -->
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Update</servlet-name>
+    <url-pattern>/Update</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
